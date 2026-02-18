@@ -1,0 +1,8 @@
+{
+  "name": "Pérsia Consultoria Digital - Funil de Agendamento",
+  "description": "High-conversion landing page for dental and aesthetic clinics focusing on AI-driven WhatsApp scheduling analysis.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

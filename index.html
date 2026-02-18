@@ -1,0 +1,793 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pérsia Consultoria Digital | Análise Gratuita de WhatsApp</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Prata&family=Montserrat:wght@400;700&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1A1F2B", // Dark Navy from logo
+              deep: "#0B0D12", // Deeper tech-black
+              accent: "#F5B800", // Golden Yellow from logo
+              accentHover: "#D4A000",
+              muted: "#64748B",
+              border: "rgba(245, 184, 0, 0.15)",
+            },
+            fontFamily: {
+              serif: ["Prata", "serif"],
+              sans: ["Inter", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+              logo: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+</head>
+  <body class="bg-grid">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <!-- Static fallback (hidden when React mounts) -->
+    <div id="static-fallback" style="display:none" class="font-sans antialiased text-white selection:bg-accent selection:text-deep">
+      <!-- Header -->
+      <header class="fixed top-0 left-0 w-full h-24 z-50 transition-all duration-300">
+        <div class="absolute inset-0 bg-deep/80 backdrop-blur-xl border-b border-white/5"></div>
+        <div class="max-w-7xl mx-auto h-full px-8 flex items-center justify-between relative z-10">
+          <div class="flex items-center">
+            <img
+              src="https://i.postimg.cc/Nj4cxS7L/Vector.png"
+              alt="Pérsia Consultoria Digital"
+              class="h-6 md:h-8 object-contain hover:opacity-80 transition-opacity"
+            />
+          </div>
+          <div class="hidden lg:flex items-center gap-10">
+            <nav class="flex items-center gap-8 text-[10px] uppercase tracking-[0.2em] text-white/60">
+              <a href="#problema" class="hover:text-accent transition-colors">O Problema</a>
+              <a href="#solucao" class="hover:text-accent transition-colors">A Solução</a>
+              <a href="#prova" class="hover:text-accent transition-colors">Resultados</a>
+            </nav>
+            <a
+              href="https://wa.me/5511930413221"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="relative px-8 py-4 rounded-full font-bold transition-all duration-500 text-center uppercase text-xs tracking-[0.2em] group overflow-hidden bg-accent text-deep hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(245,184,0,0.2)] hover:shadow-[0_0_50px_rgba(245,184,0,0.4)]"
+            >
+              <span class="relative z-10">Análise Gratuita</span>
+              <div
+                class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+              ></div>
+            </a>
+          </div>
+          <button class="lg:hidden text-accent">
+            <i class="fa-solid fa-bars-staggered text-2xl"></i>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <!-- Hero -->
+        <section class="pt-40 pb-20 md:min-h-screen flex items-center relative overflow-hidden">
+          <!-- Tech Background elements -->
+          <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-accent/5 to-transparent pointer-events-none"
+          ></div>
+          <div
+            class="absolute top-1/4 -right-20 w-96 h-96 bg-accent/10 blur-[150px] tech-pulse pointer-events-none"
+          ></div>
+
+          <div
+            class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10"
+          >
+            <div>
+              <div class="flex items-center gap-3 mb-6">
+                <div class="h-px w-8 bg-accent/40"></div>
+                
+                <div class="h-px w-8 bg-accent/40"></div>
+              </div>
+              <h1
+                class="text-5xl md:text-7xl font-serif text-white mb-8 leading-[1.1] text-gradient"
+              >
+                80% dos seus agendamentos no WhatsApp poderiam ser realizados sozinhos.
+              </h1>
+              <p
+                class="text-xl md:text-2xl font-light text-accent/80 mb-8 italic border-l-2 border-accent/20 pl-6"
+              >
+                O problema não está no chatbot ou no time de atendimento. Está na conversa.
+              </p>
+              <p class="text-muted text-lg mb-12 max-w-xl leading-relaxed">
+                Solicite uma análise gratuita do seu WhatsApp, descubra onde sua clínica está
+                perdendo vendas e como uma IA com habilidades de persuasão pode mudar isso.
+              </p>
+              <div class="flex flex-col sm:flex-row items-center gap-6">
+                <a
+                  href="https://wa.me/5511930413221"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="relative px-12 py-5 rounded-full font-bold transition-all duration-500 text-center uppercase text-sm tracking-[0.2em] group overflow-hidden bg-accent text-deep hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(245,184,0,0.2)] hover:shadow-[0_0_50px_rgba(245,184,0,0.4)] w-full sm:w-auto"
+                >
+                  <span class="relative z-10">QUERO MINHA ANÁLISE GRATUITA</span>
+                  <div
+                    class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                  ></div>
+                </a>
+                <!-- <div
+                  class="flex items-center gap-3 text-white/40 font-mono text-[10px] uppercase tracking-widest"
+                >
+                  <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+                  Live Status: Disponível agora
+                </div> -->
+              </div>
+            </div>
+
+            <div class="relative group animate-float">
+              <div
+                class="absolute -inset-1 bg-gradient-to-r from-accent/50 to-transparent rounded-[2rem] blur opacity-20 group-hover:opacity-40 transition-opacity duration-500"
+              ></div>
+              <div
+                class="relative aspect-video rounded-[2rem] overflow-hidden border border-white/10 tech-card shadow-2xl"
+              >
+                <img
+                  src="https://i.postimg.cc/V5y87bNJ/video.png"
+                  alt="Demonstração em vídeo da Pérsia Consultoria Digital"
+                  class="w-full h-full object-cover brightness-50 grayscale hover:grayscale-0 transition-all duration-700"
+                />
+                <div class="absolute inset-0 bg-deep/20"></div>
+                <!-- Digital UI Overlay -->
+                <div
+                  class="absolute top-4 left-4 p-3 glass rounded-xl border border-white/5 flex items-center gap-3"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent"
+                  >
+                    <i class="fa-solid fa-microchip text-xs"></i>
+                  </div>
+                 
+                </div>
+
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <button
+                    class="w-24 h-24 bg-accent/90 rounded-full flex items-center justify-center text-deep text-3xl hover:scale-110 transition-transform shadow-2xl shadow-accent/40"
+                  >
+                    <i class="fa-solid fa-play ml-1"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Credibility Bar -->
+        <section class="bg-primary/40 backdrop-blur-md border-y border-white/5 py-12 relative">
+          <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <span
+                  class="text-5xl md:text-6xl font-serif text-accent mb-4 glow-accent"
+                  >95%</span
+                >
+                <p
+                  class="text-white font-medium uppercase tracking-widest text-[11px] mb-1"
+                >
+                das interações comerciais no Brasil são via WhatsApp
+                </p>
+                <!-- <p
+                  class="text-white/30 font-mono text-[9px] uppercase tracking-[0.2em]"
+                >
+                  Market Dominance 2025
+                </p> -->
+              </div>
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <span
+                  class="text-5xl md:text-6xl font-serif text-accent mb-4 glow-accent"
+                  >80%</span
+                >
+                <p
+                  class="text-white font-medium uppercase tracking-widest text-[11px] mb-1"
+                >
+                das conversas são resolvidas por IA sem ajuda do  humano
+                </p>
+               <!--  <p
+                  class="text-white/30 font-mono text-[9px] uppercase tracking-[0.2em]"
+                >
+                  Zero Human Intervention
+                </p> -->
+              </div>
+              <div
+                class="flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <span
+                  class="text-5xl md:text-6xl font-serif text-accent mb-4 glow-accent"
+                  >6x</span
+                >
+                <p
+                  class="text-white font-medium uppercase tracking-widest text-[11px] mb-1"
+                >
+                  maior conversão que Chatbots tradicionais
+                </p>
+                <!-- <p
+                  class="text-white/30 font-mono text-[9px] uppercase tracking-[0.2em]"
+                >
+                  Above Traditional Bots
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problema" class="py-20 bg-deep relative">
+          <div class="max-w-7xl mx-auto px-8">
+            <div class="max-w-4xl mb-24">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="h-px w-8 bg-accent/40"></div>
+                <!-- <span
+                  class="font-mono text-[10px] tracking-[0.4em] text-accent uppercase"
+                >
+                  Critical Analysis
+                </span> -->
+                <div class="h-px w-8 bg-accent/40"></div>
+              </div>
+              <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-[1.15] text-white">
+                O algoritmo está certo. Os leads estão chegando. Por que o faturamento
+                parou?
+              </h2>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-muted text-lg leading-relaxed">
+                <p>
+                  Você investe em tráfego. Os leads chegam. Eles perguntam o preço,
+                  perguntam o horário. E então, o silêncio. O bot que você usa é um
+                  dicionário, não um vendedor.
+                </p>
+                <div class="p-8 glass rounded-[2rem] border border-accent/10">
+                  <p class="text-white italic mb-4">
+                    "O problema não está no lead."
+                  </p>
+                  <!-- <p class="text-accent text-sm font-mono tracking-widest">
+                    ERROR CODE: CONVERSATION_TIMEOUT
+                  </p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div
+                class="tech-card p-12 rounded-[2.5rem] group hover:scale-[1.02] transition-all duration-500"
+              >
+                <div
+                  class="w-16 h-16 bg-accent/5 rounded-2xl flex items-center justify-center text-accent mb-8 group-hover:bg-accent group-hover:text-deep transition-all shadow-inner"
+                >
+                  <i class="fa-solid fa-database text-2xl"></i>
+                </div>
+                <!-- <h3
+                  class="text-xl font-serif text-white mb-6 uppercase tracking-wider"
+                >
+                  Data Decay
+                </h3> -->
+                <p class="text-muted leading-relaxed text-sm">
+                  Cada minuto de espera reduz em 40% a chance de conversão. Sua equipe
+                  física não consegue ser onipresente.
+                </p>
+              </div>
+
+              <div
+                class="tech-card p-12 rounded-[2.5rem] group hover:scale-[1.02] transition-all duration-500"
+              >
+                <div
+                  class="w-16 h-16 bg-accent/5 rounded-2xl flex items-center justify-center text-accent mb-8 group-hover:bg-accent group-hover:text-deep transition-all shadow-inner"
+                >
+                  <i class="fa-solid fa-code-branch text-2xl"></i>
+                </div>
+                <!-- <h3
+                  class="text-xl font-serif text-white mb-6 uppercase tracking-wider"
+                >
+                  Pattern Mismatch
+                </h3> -->
+                <p class="text-muted leading-relaxed text-sm">
+                  Bots tradicionais travam quando o lead sai do roteiro. A venda morre por
+                  falta de flexibilidade.
+                </p>
+              </div>
+
+              <div
+                class="tech-card p-12 rounded-[2.5rem] group hover:scale-[1.02] transition-all duration-500"
+              >
+                <div
+                  class="w-16 h-16 bg-accent/5 rounded-2xl flex items-center justify-center text-accent mb-8 group-hover:bg-accent group-hover:text-deep transition-all shadow-inner"
+                >
+                  <i class="fa-solid fa-user-gear text-2xl"></i>
+                </div>
+                <!-- <h3
+                  class="text-xl font-serif text-white mb-6 uppercase tracking-wider"
+                >
+                  Standard Drift
+                </h3> -->
+                <p class="text-muted leading-relaxed text-sm">
+                  A qualidade do seu atendimento muda conforme o humor do colaborador. Sem
+                  padrão, não há escala.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solucao" class="py-20 bg-primary/20 relative">
+          <div class="absolute inset-0 bg-grid opacity-20"></div>
+          <div
+            class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center relative z-10"
+          >
+            <div class="order-2 lg:order-1 relative">
+              <div
+                class="absolute -inset-10 bg-accent/5 blur-[150px] rounded-full tech-pulse"
+              ></div>
+              <div
+                class="relative glass p-4 rounded-[3rem] border border-white/5 overflow-hidden"
+              >
+                <img
+                  src="https://i.postimg.cc/xTp7TQRc/celular-persia.png"
+                  class="rounded-[2.5rem] grayscale hover:grayscale-0 transition-all duration-1000 animate-float"
+                  alt="Engine Visual"
+                />
+                <div
+                  class="absolute bottom-12 left-12 p-8 glass rounded-3xl border border-accent/20"
+                >
+                  <!-- <p class="text-4xl font-serif text-accent mb-2 tracking-tighter">
+                    80%
+                  </p>
+                  <p
+                    class="text-[10px] font-mono uppercase tracking-[0.2em] text-white/60 leading-tight"
+                  >
+                    Efficiency Increase<br />
+                    Calculated by Pérsia_Core
+                  </p> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="order-1 lg:order-2">
+              <div class="flex items-center gap-3 mb-6">
+                <div class="h-px w-8 bg-accent/40"></div>
+                <span
+                  class="font-mono text-[10px] tracking-[0.4em] text-accent uppercase"
+                >
+                  Neural Copywriting Engine
+                </span>
+                <div class="h-px w-8 bg-accent/40"></div>
+              </div>
+              <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-[1.15] text-white">
+                IAs que não apenas respondem. IAs que fecham contratos.
+              </h2>
+              <div class="space-y-8 text-muted text-lg leading-relaxed">
+                <p>
+                  Construímos sistemas que não "esperam" pelo lead. Eles conduzem. Usamos
+                  <span class="text-white font-bold">
+                    Copywriting Conversacional
+                  </span>
+                  em nível neural para que a IA identifique o desejo, contorne a objeção e
+                  force o agendamento de forma natural.
+                </p>
+                <ul class="space-y-6">
+                  <li class="flex gap-6 items-start">
+                    <div
+                      class="w-10 h-10 rounded-full border border-accent/20 flex items-center justify-center text-accent flex-shrink-0"
+                    >
+                      <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                      <h4
+                        class="text-white font-serif uppercase tracking-widest text-sm mb-1"
+                      >
+                        Persuasão Ativa
+                      </h4>
+                      <p class="text-sm">
+                        Gatilhos mentais inseridos no timing exato da conversa.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-6 items-start">
+                    <div
+                      class="w-10 h-10 rounded-full border border-accent/20 flex items-center justify-center text-accent flex-shrink-0"
+                    >
+                      <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                      <h4
+                        class="text-white font-serif uppercase tracking-widest text-sm mb-1"
+                      >
+                        Integração Deep CRM
+                      </h4>
+                      <p class="text-sm">
+                        Sincronização em tempo real com sua agenda e funil de vendas.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flex gap-6 items-start">
+                    <div
+                      class="w-10 h-10 rounded-full border border-accent/20 flex items-center justify-center text-accent flex-shrink-0"
+                    >
+                      <i class="fa-solid fa-check text-xs"></i>
+                    </div>
+                    <div>
+                      <h4
+                        class="text-white font-serif uppercase tracking-widest text-sm mb-1"
+                      >
+                        Aprendizado Contínuo
+                      </h4>
+                      <p class="text-sm">
+                        O sistema entende quais argumentos convertem mais na sua clínica.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section id="prova" class="py-24 bg-deep overflow-hidden">
+          <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-24">
+              <div class="flex items-center gap-3 mb-6 justify-center">
+                <div class="h-px w-8 bg-accent/40"></div>
+                <span
+                  class="font-mono text-[10px] tracking-[0.4em] text-accent uppercase"
+                >
+                  Case Studies
+                </span>
+                <div class="h-px w-8 bg-accent/40"></div>
+              </div>
+              <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-[1.15] text-white">
+                Onde a tecnologia encontrou o lucro.
+              </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+              <div
+                class="glass p-12 rounded-[3rem] border border-white/5 relative group hover:border-accent/30 transition-all duration-500"
+              >
+                <div
+                  class="absolute top-8 right-12 text-accent font-mono text-xs tracking-widest opacity-40 group-hover:opacity-100 transition-opacity"
+                >
+                  +112% ROAS
+                </div>
+                <p class="text-xl text-white/80 italic mb-10 leading-relaxed">
+                  "A velocidade de resposta da IA mudou nosso jogo. Agendamentos que
+                  antes levavam horas agora acontecem em minutos, mesmo fora do horário
+                  comercial."
+                </p>
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all"
+                  >
+                    <img
+                      src="https://i.pravatar.cc/150?u=40"
+                      class="w-full h-full object-cover rounded-2xl"
+                      alt="Clarice Mendes"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-white font-bold tracking-widest text-sm uppercase"
+                    >
+                      Clarice Mendes
+                    </h4>
+                    <p
+                      class="text-accent text-[10px] font-mono tracking-widest uppercase"
+                    >
+                      Lumina Aesthetic Center
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="glass p-12 rounded-[3rem] border border-white/5 relative group hover:border-accent/30 transition-all duration-500"
+              >
+                <div
+                  class="absolute top-8 right-12 text-accent font-mono text-xs tracking-widest opacity-40 group-hover:opacity-100 transition-opacity"
+                >
+                  85% Autom. Rate
+                </div>
+                <p class="text-xl text-white/80 italic mb-10 leading-relaxed">
+                  "Integrar a inteligência da Pérsia foi como contratar 5 vendedores que
+                  nunca dormem. O sistema de follow-up é cirúrgico."
+                </p>
+                <div class="flex items-center gap-5">
+                  <div
+                    class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center grayscale group-hover:grayscale-0 transition-all"
+                  >
+                    <img
+                      src="https://i.pravatar.cc/150?u=41"
+                      class="w-full h-full object-cover rounded-2xl"
+                      alt="Dr. Ricardo Santos"
+                    />
+                  </div>
+                  <div>
+                    <h4
+                      class="text-white font-bold tracking-widest text-sm uppercase"
+                    >
+                      Dr. Ricardo Santos
+                    </h4>
+                    <p
+                      class="text-accent text-[10px] font-mono tracking-widest uppercase"
+                    >
+                      Dental Prime Global
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- High-Tech Stats Counter -->
+            <!-- <div
+              class="bg-primary/20 p-12 md:p-20 rounded-[4rem] border border-white/5 relative group overflow-hidden"
+            >
+              <div
+                class="absolute -top-24 -right-24 w-96 h-96 bg-accent/5 blur-[150px] tech-pulse"
+              ></div>
+              <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-16 relative z-10 text-center"
+              >
+                <div>
+                  <p
+                    class="text-[10px] font-mono text-accent uppercase tracking-[0.4em] mb-4"
+                  >
+                    Total Interactions
+                  </p>
+                  <p class="text-6xl font-serif text-white tracking-tighter">
+                    90k+
+                  </p>
+                  <div class="w-full h-px bg-white/5 mt-6 mb-4"></div>
+                  <p
+                    class="text-[10px] text-white/30 uppercase tracking-widest"
+                  >
+                    Processed in 2024
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-[10px] font-mono text-accent uppercase tracking-[0.4em] mb-4"
+                  >
+                    Success Rate
+                  </p>
+                  <p class="text-6xl font-serif text-white tracking-tighter">
+                    80.2%
+                  </p>
+                  <div class="w-full h-px bg-white/5 mt-6 mb-4"></div>
+                  <p
+                    class="text-[10px] text-white/30 uppercase tracking-widest"
+                  >
+                    Autonomous Closure
+                  </p>
+                </div>
+                <div>
+                  <p
+                    class="text-[10px] font-mono text-accent uppercase tracking-[0.4em] mb-4"
+                  >
+                    Avg Response
+                  </p>
+                  <p class="text-6xl font-serif text-white tracking-tighter">
+                    &lt;3s
+                  </p>
+                  <div class="w-full h-px bg-white/5 mt-6 mb-4"></div>
+                  <p
+                    class="text-[10px] text-white/30 uppercase tracking-widest"
+                  >
+                    Global Response Time
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </section>
+
+        <!-- Founders -->
+        <section class="py-20 bg-deep">
+          <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+              <div>
+                <div class="flex items-center gap-3 mb-6">
+                  <div class="h-px w-8 bg-accent/40"></div>
+                 <!--  <span
+                    class="font-mono text-[10px] tracking-[0.4em] text-accent uppercase"
+                  >
+                    Core Leadership
+                  </span> -->
+                  <div class="h-px w-8 bg-accent/40"></div>
+                </div>
+                <h2
+                  class="text-4xl md:text-6xl font-serif mb-8 leading-[1.15] text-white"
+                >
+                  A inteligência por trás do algoritmo.
+                </h2>
+                <p class="text-muted text-lg leading-relaxed mb-12">
+                  Unimos o melhor do Copywriting comercial com a engenharia de
+                  automação mais avançada do mercado para criar sistemas que
+                  realmente funcionam.
+                </p>
+                <a
+                  href="https://wa.me/5511930413221"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="relative px-8 py-4 rounded-full font-bold transition-all duration-500 text-center uppercase text-xs tracking-[0.2em] group overflow-hidden border border-accent/40 text-accent hover:bg-accent/5"
+                >
+                  <span class="relative z-10">Conheça nossa Metodologia</span>
+                </a>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div
+                  class="group relative rounded-[2.5rem] overflow-hidden aspect-[3/4] border border-white/5"
+                >
+                  <img
+                    src="https://i.postimg.cc/zB30VtFx/Retratos-Profissionais-Amalia-Saraiva-(16)-(1).jpg"
+                    class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
+                    alt="Amália Saraiva"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-deep via-transparent to-transparent"
+                  ></div>
+                  <div class="absolute bottom-8 left-8">
+                    <h4
+                      class="text-xl font-serif text-white mb-1 uppercase tracking-widest"
+                    >
+                      Amália Saraiva
+                    </h4>
+                    <p
+                      class="text-accent text-[10px] font-mono uppercase tracking-[0.3em]"
+                    >
+                      Diretora Comercial
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="group relative rounded-[2.5rem] overflow-hidden aspect-[3/4] border border-white/5"
+                >
+                  <img
+                    src="https://i.postimg.cc/SQgm0JnR/freepik-retrato-de-um-homem-adulto-em-estdio-fotogrfico-ve-9083-(1).png"
+                    class="w-full h-full object-cover grayscale transition-all duration-700 group-hover:scale-110 group-hover:grayscale-0"
+                    alt="Elnathan Nicolas"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-deep via-transparent to-transparent"
+                  ></div>
+                  <div class="absolute bottom-8 left-8">
+                    <h4
+                      class="text-xl font-serif text-white mb-1 uppercase tracking-widest"
+                    >
+                      Elnathan Nicolas
+                    </h4>
+                    <p
+                      class="text-accent text-[10px] font-mono uppercase tracking-[0.3em]"
+                    >
+                      Automation Director
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 bg-deep relative overflow-hidden border-t border-white/5">
+          <div class="absolute inset-0 bg-grid opacity-30"></div>
+          <div
+            class="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-accent/5 to-transparent"
+          ></div>
+
+          <div class="max-w-5xl mx-auto px-8 text-center relative z-10">
+            <div class="flex items-center gap-3 mb-6 justify-center">
+              <div class="h-px w-8 bg-accent/40"></div>
+              <!-- <span
+                class="font-mono text-[10px] tracking-[0.4em] text-accent uppercase"
+              >
+                Instant Access
+              </span> -->
+              <div class="h-px w-8 bg-accent/40"></div>
+            </div>
+            <h2 class="text-4xl md:text-6xl font-serif mb-8 leading-[1.15] text-white">
+              80% dos seus agendamentos poderiam estar acontecendo agora.
+            </h2>
+            <p class="text-2xl font-light text-accent/60 mb-16 italic">
+              A análise é gratuita. O diagnóstico é seu. O futuro é automatizado.
+            </p>
+
+            <div class="flex flex-col items-center gap-10">
+              <a
+                href="https://wa.me/5511930413221"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="relative px-16 py-7 rounded-full font-bold transition-all duration-500 text-center uppercase text-lg tracking-[0.2em] group overflow-hidden bg-accent text-deep hover:scale-105 active:scale-95 shadow-[0_0_80px_rgba(245,184,0,0.3)]"
+              >
+                <span class="relative z-10">QUERO MINHA ANÁLISE GRATUITA</span>
+                <div
+                  class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                ></div>
+              </a>
+              <!-- <div
+                class="p-4 glass rounded-2xl border border-white/5 flex items-center gap-4 text-[10px] font-mono uppercase tracking-widest text-white/40"
+              >
+                <i class="fa-brands fa-whatsapp text-accent text-lg"></i>
+                Secure connection established via Luana_Bot
+              </div> -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="py-16 bg-deep border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-8 space-y-8">
+          <div
+            class="flex flex-col md:flex-row items-center md:items-start justify-between gap-8"
+          >
+            <div class="text-center md:text-left">
+              <img
+                src="https://i.postimg.cc/Nj4cxS7L/Vector.png"
+                alt="Pérsia Consultoria Digital"
+                class="h-6 mb-6 object-contain hover:opacity-80 transition-opacity mx-auto md:mx-0"
+              />
+              <p class="max-w-sm text-muted text-sm leading-relaxed">
+                Arquitetando o futuro das vendas conversacionais para o setor de saúde e
+                estética através de IA neural e persuasão de alto impacto.
+              </p>
+            </div>
+
+            <div class="flex gap-4 md:justify-end w-full md:w-auto">
+              <a
+                href="https://www.instagram.com/persiaconsultor.ia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-12 h-12 rounded-xl glass flex items-center justify-center hover:bg-accent hover:text-deep transition-all border border-white/5"
+              >
+                <i class="fa-brands fa-instagram text-lg"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/am%C3%A1lia-saraiva-3a5851141/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-12 h-12 rounded-xl glass flex items-center justify-center hover:bg-accent hover:text-deep transition-all border border-white/5"
+              >
+                <i class="fa-brands fa-linkedin-in text-lg"></i>
+              </a>
+              <a
+                href="https://wa.me/5511930413221"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-12 h-12 rounded-xl glass flex items-center justify-center hover:bg-accent hover:text-deep transition-all border border-white/5"
+              >
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-white/5 text-center">
+            <p class="text-xs text-white/40">Pérsia 2025</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
