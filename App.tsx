@@ -602,7 +602,7 @@ const ForWhomSection: React.FC = () => (
       <div className="text-center mb-20">
         <div className="reveal reveal-up"><SectionTag>Para Quem É</SectionTag></div>
         <div className="reveal reveal-up reveal-delay-1">
-          <SectionHeadline>Esta análise foi feita para quem já tem volume — e quer convertê-lo melhor.</SectionHeadline>
+          <SectionHeadline>Esta análise foi feita para quem já tem volume e quer convertê-lo melhor.</SectionHeadline>
         </div>
       </div>
 
@@ -730,10 +730,6 @@ const FinalCTA: React.FC = () => (
         <Button className="px-16 py-7 text-lg" glowPulse href={WA_LINK}>
           QUERO MINHA ANÁLISE GRATUITA
         </Button>
-        <div className="p-4 glass rounded-2xl border border-white/5 flex items-center gap-4 text-[10px] font-mono uppercase tracking-widest text-white/40">
-          <i className="fa-brands fa-whatsapp text-accent text-lg" />
-          Conexão segura via Luana_Bot<span className="animate-blink">_</span>
-        </div>
       </div>
     </div>
   </section>
